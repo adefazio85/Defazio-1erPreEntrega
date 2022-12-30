@@ -7,13 +7,14 @@
 //INFORMAR VALOR DE LA CUOTA
 
 
-//Declaración de Variables y Constantes
+//Declaración Funciones a utilizar
 
 function calculoCuota (monto, int, cuotas){
     let valorCuota= monto * (1+int) / cuotas;
     return valorCuota;
 }
 
+//Declaración de Variables y Constantes
 let montoTotal
 let cantidadDeCuotas
 let intereses
@@ -21,11 +22,14 @@ let montoCuota
 let repetir
 let calcularCuotas
 
+//Mensaje de Biemvenida
+
 alert("Bienvenidos al sistema de cálculo de cuotas")
 
 
-do{
+//Bucle principal
 
+do{
     montoTotal = Number (prompt ("Ingrese el monto a financiar"));  
     repetir=true;
     do 
